@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'articles/index'
+  root 'articles#index'
+
 	#Casein routes
 	namespace :casein do
 		resources :articles

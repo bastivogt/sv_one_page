@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'front_end_articles/index'
+
+  get 'front_end_article/index'
+
   get 'articles/index'
-  root 'articles#index'
+  root 'front_end_articles#index'
 
 	#Casein routes
 	namespace :casein do

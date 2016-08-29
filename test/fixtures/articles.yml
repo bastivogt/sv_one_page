@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  content: MyText
+  sorting_index: 1
+  menu_position: MyString
+  nav_id: MyString
+  modal_id: MyString
+  css_class: MyString
+  inline_style: MyText
+  padding_top: MyString
+  padding_bottom: MyString
+
+two:
+  title: MyString
+  content: MyText
+  sorting_index: 1
+  menu_position: MyString
+  nav_id: MyString
+  modal_id: MyString
+  css_class: MyString
+  inline_style: MyText
+  padding_top: MyString
+  padding_bottom: MyString

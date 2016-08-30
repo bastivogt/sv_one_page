@@ -1,3 +1,7 @@
+<header id="header">
+  <%= render "front_end_articles/navigation" %>
+</header>
+
 <% @articles.each do |a| %>
   <article id="<%= a.nav_id %>"<% if !a.attr_empty? a.css_class %> class="<%= a.css_class %>"<% end %><% if !a.attr_empty? a.style %> style="<%= a.style %>"<% end %>>
     <%= a.content.html_safe %>

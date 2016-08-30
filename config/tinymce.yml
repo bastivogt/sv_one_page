@@ -1,7 +1,7 @@
 toolbar:
   - styleselect | bold italic | undo redo | code
-  - image | link
+  #- image | link
 plugins:
   - image
   - link
-  #- code
+  - code

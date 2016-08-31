@@ -10,5 +10,14 @@ def create_panel(title, &block)
 end
 
 
+def create_accordion_panel(title: "Title", id: "accordion", &block)
+  s = "<h3>#{title}</h3>"
+  b = capture(&block)
+  e = ""
+  result = s + b + e
+  result.html_safe
+end
+
+
 
 end

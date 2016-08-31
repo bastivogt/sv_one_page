@@ -73,6 +73,8 @@ GEM
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
+    font-awesome-sass (4.6.2)
+      sass (>= 3.2)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -177,6 +179,7 @@ DEPENDENCIES
   byebug
   casein (~> 5.1.1)
   coffee-rails (~> 4.1.0)
+  font-awesome-sass
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.5)

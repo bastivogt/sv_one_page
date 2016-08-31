@@ -60,7 +60,7 @@ module Casein
     private
 
       def article_params
-        params.require(:article).permit(:title, :content, :sorting_index, :menu_position, :nav_id, :modal_id, :css_class, :inline_style, :padding_top, :padding_bottom)
+        params.require(:article).permit(:title, :content, :sorting_index, :menu_position, :nav_id, :modal_id, :css_class, :inline_style, :padding_top, :padding_bottom, :published, :show_in_nav)
       end
 
   end

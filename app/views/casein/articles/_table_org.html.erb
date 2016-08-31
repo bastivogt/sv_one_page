@@ -29,6 +29,7 @@
 			<td><%= casein_table_cell_link article.inline_style, casein_article_path(article) %></td>
 			<td><%= casein_table_cell_link article.padding_top, casein_article_path(article) %></td>
 			<td><%= casein_table_cell_link article.padding_bottom, casein_article_path(article) %></td>
+
 			<td class="delete">
 				<%= link_to(casein_show_row_icon("trash"), casein_article_path(article), :method => :delete, :data => { :confirm => "Are you sure you want to delete this article?" }) %>
 			</td>

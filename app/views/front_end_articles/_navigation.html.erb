@@ -14,7 +14,6 @@
     <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li>
         <% @nav_items_left.each do |item| %>
           <li>
             <a href="#<%= item.nav_id %>" title="<%= item.title %>"><%= item.title %></a>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160829130429) do
+ActiveRecord::Schema.define(version: 20160831132715) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20160829130429) do
     t.string   "padding_bottom"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.boolean  "published"
+    t.boolean  "show_in_nav"
   end
 
   create_table "casein_admin_users", force: :cascade do |t|

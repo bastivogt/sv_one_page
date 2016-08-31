@@ -45,4 +45,13 @@
 		<%= casein_text_field f, f.object, :padding_bottom %>
 	</div>
 </div>
+
+<div class="row">
+	<div class="col-lg-6">
+		<%= casein_check_box f, f.object, :published %>
+	</div>
+	<div class="col-lg-6">
+		<%= casein_check_box f, f.object, :show_in_nav %>
+	</div>
+</div>
 <%= tinymce %>

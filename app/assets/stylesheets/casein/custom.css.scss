@@ -1,2 +1,14 @@
 /* CASEIN CUSTOM */
 /* Use this file for your project-specific Casein CSS */
+
+.panel {
+  margin-bottom: 4px;
+  .panel-heading {
+    a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      outline: none;
+    }
+  }
+}

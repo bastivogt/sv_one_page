@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160831132715) do
+ActiveRecord::Schema.define(version: 20160901142553) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -28,6 +28,12 @@ ActiveRecord::Schema.define(version: 20160831132715) do
     t.datetime "updated_at",     null: false
     t.boolean  "published"
     t.boolean  "show_in_nav"
+    t.string   "bg_img_src"
+    t.string   "bg_img_pos_v"
+    t.boolean  "bg_img_publish"
+    t.string   "bg_img_pos_h"
+    t.string   "html_tag"
+    t.string   "html_tag_name"
   end
 
   create_table "casein_admin_users", force: :cascade do |t|

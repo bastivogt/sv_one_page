@@ -11,6 +11,23 @@
 	</div>
 <% end %>
 
+<%= create_collapse_panel title: "Background image", open: false, id: "bg_image" do %>
+	<div class="row">
+		<div class="col-sm-12">
+			<%= casein_text_field f, f.object, :bg_img_src %>
+		</div>
+		<div class="col-lg-6">
+			<%= casein_select f, f.object, :bg_img_pos_h, ["left", "center", "right"] %>
+		</div>
+		<div class="col-lg-6">
+			<%= casein_select f, f.object, :bg_img_pos_v, ["top", "center", "bottom"] %>
+		</div>
+		<div class="col-lg-6">
+			<%= casein_check_box f, f.object, :bg_img_publish %>
+		</div>
+	</div>
+<% end %>
+
 <%= create_collapse_panel title: "Nav Settings", open: false, id: "nav_settings" do %>
 	<div class="row">
 		<div class="col-lg-6">
@@ -27,6 +44,9 @@
 		</div>
 		<div class="col-lg-6">
 			<%= casein_text_field f, f.object, :modal_id, {casein_label: "Modal ID"} %>
+		</div>
+		<div class="col-lg-6">
+			<%= casein_check_box f, f.object, :show_in_nav %>
 		</div>
 	</div>
 <% end %>
@@ -51,13 +71,18 @@
 	</div>
 <% end %>
 
+<%= create_collapse_panel title: "HTML tag", open: false, id: "html_tag" do %>
+	<div class="row">
+		<div class="col-lg-6">
+			<%= casein_select f, f.object, :html_tag_name, ["article", "section", "header", "footer", "div"] %>
+		</div>
+	</div>
+<% end %>
+
 <%= create_collapse_panel title: "Publishing", open: false, id: "publishing" do %>
 	<div class="row">
 		<div class="col-lg-6">
 			<%= casein_check_box f, f.object, :published %>
-		</div>
-		<div class="col-lg-6">
-			<%= casein_check_box f, f.object, :show_in_nav %>
 		</div>
 	</div>
 <% end %>

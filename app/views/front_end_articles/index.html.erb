@@ -5,7 +5,25 @@
 </header>
 
 <% @articles_to_show.each do |a| %>
-  <article id="<%= a.nav_id %>"<% if !a.attr_empty? a.css_class %> class="<%= a.css_class %>"<% end %><% if !a.attr_empty? a.style %> style="<%= a.style %>"<% end %>>
-    <%= a.content.html_safe %>
-  </article>
+  <<%= a.html_tag_name %><% if !a.attr_empty? a.nav_id %> id="<%= a.nav_id %>"<% end %><% if !a.attr_empty? a.css_class %> class="<%= a.css_class %>"<% end %>>
+
+    <% if a.bg_img_publish && (!a.attr_empty?(a.bg_img_src)) %>
+      <div class="bg_image" style="background: url('<%= image_path(a.bg_img_src) %>') <%= a.bg_img_pos_v %> <%= a.bg_img_pos_h %>;background-size:cover;">
+
+    <% end %>
+
+        <div class="content"<% if !a.attr_empty? a.style %> style="<%= a.style %>"<% end %>>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <%= a.content.html_safe %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <% if a.bg_img_publish && (!a.attr_empty?(a.bg_img_src)) %>
+      </div>
+    <% end %>
+  </<%= a.html_tag_name %>>
 <% end %>

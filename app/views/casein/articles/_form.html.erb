@@ -28,7 +28,7 @@
 	</div>
 <% end %>
 
-<%= create_collapse_panel title: "Nav Settings", open: false, id: "nav_settings" do %>
+<%= create_collapse_panel title: "Nav Settings", open: true, id: "nav_settings" do %>
 	<div class="row">
 		<div class="col-lg-6">
 			<%= casein_number_field f, f.object, :sorting_index %>
@@ -79,7 +79,7 @@
 	</div>
 <% end %>
 
-<%= create_collapse_panel title: "Publishing", open: false, id: "publishing" do %>
+<%= create_collapse_panel title: "Publishing", open: true, id: "publishing" do %>
 	<div class="row">
 		<div class="col-lg-6">
 			<%= casein_check_box f, f.object, :published %>

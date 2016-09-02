@@ -32,6 +32,9 @@ gem 'tinymce-rails'
 # font-awesome
 gem 'font-awesome-sass'
 
+# seed_dump
+gem 'seed_dump'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
